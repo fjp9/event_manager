@@ -37,6 +37,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    ports:
+      - "8000:8000" # Expose FastAPI on port 8000 of the host
     networks:
       - app-network
 
