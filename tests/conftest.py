@@ -227,7 +227,8 @@ def user_base_data_invalid():
     return {
         "nickname": "john_doe_123",
         "email": "john.doe.example.com",
-        "full_name": "John Doe",
+        "first_name": "John",
+        "last_name": "Doe",
         "bio": "I am a software engineer with over 5 years of experience.",
         "profile_picture_url": "https://example.com/profile_pictures/john_doe.jpg"
     }
@@ -241,7 +242,8 @@ def user_create_data(user_base_data):
 def user_update_data():
     return {
         "email": "john.doe.new@example.com",
-        "full_name": "John H. Doe",
+        "first_name": "John H.",
+        "last_name": "Doe",
         "bio": "I specialize in backend development with Python and Node.js.",
         "profile_picture_url": "https://example.com/profile_pictures/john_doe_updated.jpg"
     }
