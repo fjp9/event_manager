@@ -45,7 +45,6 @@ jobs:
           echo "smtp_server=${{ secrets.SMTP_SERVER }}" >> .env
           echo "smtp_username=${{ secrets.SMTP_USERNAME }}" >> .env
           echo "smtp_password=${{ secrets.SMTP_PASSWORD }}" >> .env
-          echo "smtp_port=${{ secrets.SMTP_PORT }}" >> .env
       
       - name: Install dependencies
         run: |
